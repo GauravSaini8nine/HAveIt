@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="@drawable/back">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="30dp"
+        android:layout_above="@id/tvLEtsEat"
+
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/logo_have_white" />
+
+    <TextView
+        android:id="@+id/tvLEtsEat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/etnumber"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/amita"
+        android:text="Let's Eat !!"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="40sp" />
+
+    <EditText
+        android:id="@+id/etnumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:textStyle="bold"
+        android:drawableLeft="@drawable/ic_baseline_local_phone_24"
+        android:drawablePadding="4dp"
+        android:background="@drawable/field_background"
+        android:hint="Enter Mobile Number"
+        android:inputType="phone"
+        android:maxLength="10"
+        android:padding="12dp"
+        android:textColor="@color/black"
+        android:textColorHint="#DD222121" />
+    <EditText
+        android:padding="12dp"
+        android:inputType="textPassword"
+        android:id="@+id/etLoginPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Password"
+        android:drawableLeft="@drawable/ic_baseline_lock_24"
+        android:drawablePadding="4dp"
+        android:background="@drawable/field_background"
+        android:layout_below="@+id/etnumber"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+
+        android:textColor="@color/black"
+        android:textColorHint="#DD222121"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        />
+
+
+    <TextView
+        android:id="@+id/tvForgetPass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forget Password?"
+        android:layout_margin="5dp"
+        android:textColor="@color/white"
+
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/etLoginPassword"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"/>
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textColor="@color/white"
+        android:background="@drawable/button"
+        android:layout_below="@+id/tvForgetPass"
+        android:layout_margin="20dp"
+        />
+
+
+    <TextView
+        android:id="@+id/tvSignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Don't have an account? sign up now"
+        android:padding="25dp"
+        android:layout_marginBottom="20dp"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:layout_alignParentBottom="true"
+
+        android:layout_gravity="bottom"/>
+
+</RelativeLayout>

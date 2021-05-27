@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">HAve It!</string>
+    <string name="preference_file_name">Avengers preference</string>
+    <string name="open_drawer">Open Drawer</string>
+    <string name="Close_drawer">Close Drawer</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
