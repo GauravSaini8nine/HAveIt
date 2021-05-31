@@ -1,8 +1,7 @@
-package com.gaurav.myapplication
+package com.gaurav.myapplication.Avtivity
 
 import android.os.Bundle
-import androidx.appcompat.app.AppCompatActivity
-import androidx.appcompat.widget.Toolbar
+import com.gaurav.myapplication.R
 
 class ForgotPassword : BaseActivity() {
 

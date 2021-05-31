@@ -1,4 +1,4 @@
-package com.gaurav.myapplication
+package com.gaurav.myapplication.Avtivity
 
 import android.content.Context
 import android.content.Intent
@@ -6,6 +6,7 @@ import android.content.SharedPreferences
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
+import com.gaurav.myapplication.R
 
 @Suppress("DEPRECATION")
 class SplashScreenActivity : AppCompatActivity() {

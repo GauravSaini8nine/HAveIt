@@ -1,8 +1,8 @@
-package com.gaurav.myapplication
+package com.gaurav.myapplication.Avtivity
 
-import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
+import com.gaurav.myapplication.R
 
 open class BaseActivity : AppCompatActivity(){
 

@@ -1,4 +1,4 @@
-package com.gaurav.myapplication
+package com.gaurav.myapplication.Avtivity
 
 import android.content.Context
 import android.content.Intent
@@ -9,6 +9,7 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
+import com.gaurav.myapplication.R
 
 class MainActivity : AppCompatActivity()  {
     lateinit var btnLogin :Button

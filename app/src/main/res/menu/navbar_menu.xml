@@ -2,8 +2,8 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <group android:checkableBehavior="single">
     <item
-        android:id="@+id/dashboard"
-        android:title="Dashboard"
+        android:id="@+id/homedashboard"
+        android:title="Home"
         />
     <item
         android:id="@+id/favorite"
@@ -18,6 +18,12 @@
         android:id="@+id/aboutApp"
         android:title="About App"
         />
+
+
+        <item
+            android:id="@+id/Logout"
+            android:title="Logout"
+            />
     </group>
 
 </menu>

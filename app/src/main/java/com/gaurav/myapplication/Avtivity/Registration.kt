@@ -1,4 +1,4 @@
-package com.gaurav.myapplication
+package com.gaurav.myapplication.Avtivity
 
 import android.content.Context
 import android.content.Intent
@@ -8,8 +8,7 @@ import android.util.Log
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
-import androidx.appcompat.app.AppCompatActivity
-import androidx.appcompat.widget.Toolbar
+import com.gaurav.myapplication.R
 
 class Registration :  BaseActivity() {
 

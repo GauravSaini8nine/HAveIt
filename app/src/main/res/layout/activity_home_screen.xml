@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    tools:context=".HomeScreen">
+    tools:context=".Avtivity.HomeScreen">
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout
         android:id="@+id/coordinator"
@@ -18,15 +18,7 @@
             android:layout_height="wrap_content"
             android:elevation="0dp">
 
-            <androidx.appcompat.widget.Toolbar
-                android:id="@+id/toolbar"
-                android:layout_width="match_parent"
-                android:layout_height="?attr/actionBarSize"
-                android:background="@color/teal_700"
-                app:title="something"
-                app:titleTextColor="@color/black"
-                app:layout_scrollFlags="enterAlways|scroll"
-                />
+            <include layout="@layout/toolbar"/>
 
         </com.google.android.material.appbar.AppBarLayout>
 
@@ -39,19 +31,6 @@
 
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
-
-    <!--    <Button-->
-    <!--        android:id="@+id/logoutButton"-->
-    <!--        android:layout_width="match_parent"-->
-    <!--        android:layout_height="wrap_content"-->
-    <!--        android:layout_margin="20dp"-->
-    <!--        android:background="@drawable/button"-->
-    <!--        android:text="Logout"-->
-    <!--        android:textSize="25sp"-->
-    <!--        android:textStyle="bold"-->
-    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
-    <!--        app:layout_constraintEnd_toEndOf="parent"-->
-    <!--        app:layout_constraintStart_toStartOf="parent" />-->
 
 
     <com.google.android.material.navigation.NavigationView

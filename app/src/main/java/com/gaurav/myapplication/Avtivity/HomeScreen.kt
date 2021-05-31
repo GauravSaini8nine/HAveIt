@@ -1,19 +1,19 @@
-package com.gaurav.myapplication
+package com.gaurav.myapplication.Avtivity
 
 import android.content.Context
-import android.content.Intent
 import android.content.SharedPreferences
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.Gravity
 import android.view.MenuItem
-import android.widget.Button
 import android.widget.FrameLayout
-import android.widget.Toast
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.coordinatorlayout.widget.CoordinatorLayout
 import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
+import com.gaurav.myapplication.Fragments.AboutApp
+import com.gaurav.myapplication.Fragments.FavoriteFragment
+import com.gaurav.myapplication.Fragments.ProfileFragment
+import com.gaurav.myapplication.Fragments.HomeFragment
+import com.gaurav.myapplication.R
 import com.google.android.material.navigation.NavigationView
 
 class HomeScreen : BaseActivity() {
@@ -42,12 +42,13 @@ class HomeScreen : BaseActivity() {
         coordinatorLayout = findViewById(R.id.coordinator)
         frameLayout = findViewById(R.id.frame)
         navigationView = findViewById(R.id.navigation)
-        dashboard()
+        homeDashboard()
 
         val actionBarDrawerToggle = ActionBarDrawerToggle(
             this,drawerLayout,
             R.string.open_drawer,
-            R.string.Close_drawer )
+            R.string.Close_drawer
+        )
 
         drawerLayout.addDrawerListener(actionBarDrawerToggle)
         actionBarDrawerToggle.syncState()
@@ -63,26 +64,26 @@ class HomeScreen : BaseActivity() {
             previousMenuItem= it
 
             when(it.itemId){
-                R.id.dashboard-> {
-                    dashboard()
+                R.id.homedashboard -> {
+                    homeDashboard()
                 }
-                R.id.favorite->  {
+                R.id.favorite ->  {
                     supportFragmentManager.beginTransaction()
                         .replace(R.id.frame, FavoriteFragment())
                         .commit()
                     supportActionBar?.title = "Favorites"
                     drawerLayout.closeDrawers()
                 }
-                R.id.profile->  {
+                R.id.profile ->  {
                     supportFragmentManager.beginTransaction()
-                        .replace(R.id.frame,ProfileFragment())
+                        .replace(R.id.frame, ProfileFragment())
                         .commit()
                     supportActionBar?.title = "Profile"
                     drawerLayout.closeDrawers()
                 }
-                R.id.aboutApp->  {
+                R.id.aboutApp ->  {
                     supportFragmentManager.beginTransaction()
-                        .replace(R.id.frame,AboutApp())
+                        .replace(R.id.frame, AboutApp())
                         .commit()
                     supportActionBar?.title = "About App"
                     drawerLayout.closeDrawers()
@@ -117,13 +118,13 @@ class HomeScreen : BaseActivity() {
         return super.onOptionsItemSelected(item)
 
     }
-    fun dashboard(){
+    fun homeDashboard(){
         supportFragmentManager.beginTransaction()
-            .replace(R.id.frame, drawerFragment())
+            .replace(R.id.frame, HomeFragment())
             .commit()
 
-        supportActionBar?.title = "Dashboard"
-        navigationView.setCheckedItem(R.id.dashboard)
+        supportActionBar?.title = "Home"
+        navigationView.setCheckedItem(R.id.homedashboard)
         drawerLayout.closeDrawers()
 
 
@@ -133,7 +134,7 @@ class HomeScreen : BaseActivity() {
 
         val frag = supportFragmentManager.findFragmentById(R.id.frame)
         when(frag) {
-            !is drawerFragment -> dashboard()
+            !is HomeFragment -> homeDashboard()
 
             else -> {super.onBackPressed()}
         }
