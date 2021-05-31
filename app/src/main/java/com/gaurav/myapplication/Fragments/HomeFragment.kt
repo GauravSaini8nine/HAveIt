@@ -29,6 +29,13 @@ class HomeFragment : Fragment() {
         HomeData("hey","jhgjh", "jhgj", "jhgjh"),
         HomeData("hey","jhgjh", "jhgj", "jhgjh"),
         HomeData("hey","jhgjh", "jhgj", "jhgjh"),
+        HomeData("hey","jhgjh", "jhgj", "jhgjh"),
+        HomeData("hey","jhgjh", "jhgj", "jhgjh"),
+        HomeData("hey","jhgjh", "jhgj", "jhgjh"),
+        HomeData("hey","jhgjh", "jhgj", "jhgjh"),
+        HomeData("hey","jhgjh", "jhgj", "jhgjh"),
+        HomeData("hey","jhgjh", "jhgj", "jhgjh"),
+        HomeData("hey","jhgjh", "jhgj", "jhgjh"),
 
     )
     lateinit var homerecyclerviewAdaptor: HomeRecyclerAdaptor
