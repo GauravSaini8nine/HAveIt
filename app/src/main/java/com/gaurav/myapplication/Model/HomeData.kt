@@ -1,6 +1,7 @@
 package com.gaurav.myapplication.Model
 
 data class HomeData (
+    val rest_id:String,
     val rest_name: String,
     val rest_Rating: String,
     val rest_cost_for_one : String,

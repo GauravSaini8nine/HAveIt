@@ -15,9 +15,9 @@ class HomeRecyclerAdaptor(val context: Context, val itemList : ArrayList<HomeDat
     : RecyclerView.Adapter<HomeRecyclerAdaptor.HomeViewHolder>(){
     class HomeViewHolder(view:View): RecyclerView.ViewHolder(view){
         val homerestname : TextView = view.findViewById(R.id.home_rest_name)
-//        val homerestprice : TextView = view.findViewById(R.id.home_rest_price)
-//        val homerestrating : TextView = view.findViewById(R.id.home_rest_rating)
-//        val homerestimage : ImageView = view.findViewById(R.id.home_image)
+        val homerestprice : TextView = view.findViewById(R.id.home_rest_price)
+        val homerestrating : TextView = view.findViewById(R.id.home_rest_rating)
+        val homerestimage : ImageView = view.findViewById(R.id.home_image)
 
 
     }
@@ -30,9 +30,9 @@ class HomeRecyclerAdaptor(val context: Context, val itemList : ArrayList<HomeDat
     override fun onBindViewHolder(holder: HomeViewHolder, position: Int) {
         val text = itemList[position]
         holder.homerestname.text = text.rest_name
-//        holder.homerestprice.text = text.rest_cost_for_one
-//        holder.homerestrating.text = text.rest_Rating
-//        Picasso.get().load(text.rest_image_url).into(holder.homerestimage)
+        holder.homerestprice.text = text.rest_cost_for_one
+        holder.homerestrating.text = text.rest_Rating
+        Picasso.get().load(text.rest_image_url).into(holder.homerestimage)
 
     }
 

@@ -6,7 +6,7 @@
     android:layout_margin="7dp"
     android:elevation="20dp"
 
-    app:cardBackgroundColor="@color/black"
+    app:cardBackgroundColor="#E91E1E1E"
 
     app:cardCornerRadius="12dp">
 
@@ -37,6 +37,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
+
                 android:layout_weight="1"
                 android:text="Restname"
                 android:textColor="@color/white"
@@ -64,7 +65,8 @@
             android:layout_height="wrap_content"
             android:layout_gravity="bottom"
             android:layout_margin="5dp"
-            android:layout_weight="0.6"
+            android:padding="10dp"
+            android:layout_weight="1.5"
             android:text="4.5"
             android:textColor="@color/white"
             android:textSize="15dp"
