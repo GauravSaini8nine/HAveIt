@@ -1,16 +1,111 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    >
+    android:background="@drawable/blackspoon">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardprofile"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="About App"
-        android:textSize="50dp"
-        android:textColor="@color/black"/>
+        android:layout_height="750dp"
+        android:layout_alignParentTop="true"
+        android:layout_margin="20dp"
+        app:cardBackgroundColor="#48FFFFFF"
+        app:cardCornerRadius="30dp">
 
-</FrameLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:id="@+id/profilePic"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="10dp"
+                android:src="@drawable/man" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/profilePic"
+                android:layout_margin="10dp"
+                app:cardBackgroundColor="#A1FFFFFF"
+
+                app:cardCornerRadius="30dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Gaurav Saini"
+                    android:textSize="27sp"
+                    android:layout_margin="10dp"
+                    android:gravity="center_horizontal"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Android App Developer (Kotlin)"
+                        android:textSize="19sp"
+                        android:layout_margin="5dp"
+                        android:gravity="center_horizontal"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="gauravs89@yahoo.com"
+                        android:textSize="19sp"
+                        android:layout_margin="5dp"
+                        android:gravity="center_horizontal"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:fontFamily="@font/gloria_hallelujah"
+                        android:gravity="center_horizontal"
+                        android:text=" ' Move forward, \n by helpinh others' "
+                        android:textColor="@color/black"
+                        android:textSize="19sp"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+
+
+
+            </androidx.cardview.widget.CardView>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="20dp"
+                android:background="@drawable/button"
+                android:text="Contact Developer"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+</RelativeLayout>

@@ -10,16 +10,11 @@ open class BaseActivity : AppCompatActivity(){
 
 
     internal fun activateToolbar(enableHome: Boolean) {
-        val toolbar: Toolbar = findViewById(R.id.toolbar)
+        val toolbar: Toolbar = findViewById(R.id.toolbar2)
         setSupportActionBar(toolbar)
         supportActionBar?.setDisplayHomeAsUpEnabled(enableHome)
     }
 
 
-    internal fun activateHamburger(enableHome: Boolean) {
-        val toolbar: Toolbar = findViewById(R.id.toolbar)
-        setSupportActionBar(toolbar)
-        supportActionBar?.setDisplayHomeAsUpEnabled(enableHome)
 
-    }
 }

@@ -4,25 +4,31 @@
     <item
         android:id="@+id/homedashboard"
         android:title="Home"
+        android:icon="@drawable/ic_baseline_home_24"
+
         />
     <item
         android:id="@+id/favorite"
-        android:title="favorite"
+        android:title="Favorite"
+        android:icon="@drawable/faveremove"
         />
     <item
         android:id="@+id/profile"
-        android:title="profile"
+        android:title="Profile"
+        android:icon="@drawable/ic_baseline_person_24"
         />
 
     <item
         android:id="@+id/aboutApp"
         android:title="About App"
+        android:icon="@drawable/ic_baseline_info_24"
+
         />
 
 
         <item
             android:id="@+id/Logout"
-            android:title="Logout"
+            android:title="Log out"
             />
     </group>
 
